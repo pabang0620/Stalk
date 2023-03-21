@@ -1,0 +1,15 @@
+.newsModalButton {
+  border: none;
+  background: none;
+  color: white;
+  position: fixed;
+  top: 92%;
+  right: 50px;
+  z-index: 30;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}

@@ -1,0 +1,68 @@
+.backgroundimg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  filter: blur(2px);
+  object-fit: cover;
+  z-index: 10;
+  /* display: none; */
+}
+.WeatherPlace {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+/* 폰트어썸아이콘 색상 */
+.fa-solid.fa-cloud {
+  color: white;
+}
+.fa-solid.fa-snowflake {
+  color: #99bdf5;
+}
+.fa-solid.fa-cloud-showers-heavy {
+  color: white;
+}
+.fa-solid.fa-sun {
+  color: yellow;
+}
+
+.weatherInputStyle {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(233, 233, 233);
+}
+.colum {
+  padding: 5px;
+  margin: 0px 10px;
+  color: white;
+  z-index: 30;
+  font-size: 23px;
+}
+.weatherBoxsize {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.weatherBox {
+  height: 100px;
+  width: 100vw;
+  border-radius: 7px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .weatherBox {
+    width: 100vw;
+    margin-bottom: 5%;
+  }
+}
+.react-player {
+  width: 100vw;
+  height: 100vh;
+}

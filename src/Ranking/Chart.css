@@ -1,0 +1,99 @@
+.StockChart {
+  transform: translateX(-3%);
+  right: 24%;
+  top: 30%;
+  position: fixed;
+  z-index: 60;
+  width: 48vw;
+  border-radius: 5px;
+  overflow-y: scroll;
+  display: flex;
+  height: 405px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.StockChart::-webkit-scrollbar {
+  width: 10px;
+}
+.inputStyle {
+  border: none;
+  position: fixed !important;
+  top: 17%;
+  width: 33vw;
+  right: 35%;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 40px;
+  outline: none;
+  padding: 30px;
+  margin-bottom: 45px;
+  background: none;
+  margin-top: 40px;
+  z-index: 60;
+  background-color: white;
+}
+/* 미디어 쿼리 반응형  */
+
+@media screen and (max-width: 992px) {
+  .inputStyle {
+    width: 33vw;
+  }
+}
+
+.StockBoxStyle {
+  position: fixed;
+  right: 25%;
+  background-color: white !important;
+  width: 50vw;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  z-index: 50;
+  filter: blur(100px);
+}
+.StockInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0px 2px 1%;
+  border: 1px solid #ccc;
+}
+.StockName {
+  color: black;
+  margin: 1% 5%;
+  width: 15vw;
+  font-size: 15px;
+}
+.StockPrice {
+  margin-bottom: 0px;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ccc;
+}
+
+.StockPrice p {
+  color: black;
+  margin-bottom: 3px;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.StockPrice p span {
+  margin-left: 7%;
+  font-size: 15px;
+}
+#StockPrice1 {
+  display: flex;
+  justify-content: center;
+}
+#StockPrice1:hover {
+  cursor: pointer;
+}
+h6,
+h5,
+p {
+  color: white;
+}

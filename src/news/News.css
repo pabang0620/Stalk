@@ -1,0 +1,60 @@
+.NewsBox {
+  height: 300px;
+  width: 20vw;
+  border-radius: 7px;
+  overflow: hidden;
+  z-index: 70;
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+.NewsCardMain {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.NewsCardImgSize {
+  height: 180px;
+  width: 20vw;
+  object-fit: cover;
+}
+.NewsBoxRow {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.titleWrap {
+  font-size: 15px;
+  width: 18vw;
+  height: 70px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: black;
+}
+.NewsBox {
+  position: fixed;
+  top: 88%;
+  right: 100px;
+}
+.author {
+  font-size: 12px;
+  width: 18vw;
+  height: 20px;
+  flex-wrap: wrap;
+  color: black;
+}
+.slick-list {
+  height: 300px;
+  width: 80vw;
+
+  border-radius: 7px;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 992px) {
+  .slick-list {
+    width: 50vw;
+    height: 100px;
+  }
+}
