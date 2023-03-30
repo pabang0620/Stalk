@@ -144,6 +144,23 @@ const Weather = () => {
                   ></img>
                 )
             )}
+            {weatherdata.data.weather.map(
+              (sun) =>
+                sun.main !== "Haze" && (
+                  <ReactPlayer
+                    className="react-player"
+                    url={process.env.PUBLIC_URL + "/Imgfile/sunset.mp4"}
+                    width="100vw" // 플레이어 크기 (가로)
+                    height="100vh" // 플레이어 크기 (세로)
+                    playing={true} // 자동 재생 on
+                    muted={true} // 자동 재생 on
+                    controls={false} // 플레이어 컨트롤 노출 여부
+                    light={false} // 플레이어 모드
+                    pip={true} // pip 모드 설정 여부
+                    loop={true}
+                  />
+                )
+            )}
           </>
         )}
       </div>
